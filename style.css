@@ -1,0 +1,181 @@
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fcfcfc; /* Un blanco crudo muy artístico */
+    color: #2b2b2b;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar Minimalista */
+.navbar {
+    display: flex;
+    flex-direction: column; /* Centrado vertical elegante */
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.sublogo {
+    font-size: 0.75rem;
+    font-weight: 200;
+    letter-spacing: 6px;
+    color: #777;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #666;
+    margin: 0 15px;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #000;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 0.9rem;
+    color: #888;
+    font-weight: 400;
+}
+
+/* Contenedor del Catálogo */
+.contenedor-catalogo {
+    padding: 40px 5%;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+/* Grilla - Separados uno por uno perfectamente */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px; /* Bastante espacio para que "respiren" las fotos */
+}
+
+/* Tarjeta Minimalista Ajustada */
+.tarjeta-minimalista {
+    background-color: #ffffff;
+    border-radius: 0px; /* Bordes rectos para un look más arquitectónico y profesional */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s;
+}
+
+/* Caja de la foto: Imagen ARRIBA */
+.caja-foto {
+    background-color: #f7f7f7; /* Fondo neutro para resaltar la arcilla */
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-producto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la foto cubra todo el espacio de forma limpia */
+}
+
+/* Detalles del Producto: Información ABAJO */
+.detalles-producto {
+    padding: 20px 10px;
+    text-align: left; /* Alineado a la izquierda se ve más premium */
+}
+
+.detalles-producto h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.categoria {
+    font-size: 0.75rem;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.detalles-producto .descripcion {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+    height: 45px; /* Evita que las tarjetas se desalineen */
+}
+
+.detalles-producto .precio {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* Botón WhatsApp Elegante */
+.btn-whatsapp {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #111; /* Botón negro sólido, muy chic */
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #444;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.75rem;
+    color: #aaa;
+    background-color: #ffffff;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 60px;
+}
