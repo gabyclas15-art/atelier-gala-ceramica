@@ -1,11 +1,55 @@
-<!-- Sección de Productos (Colección Princesas) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Gala Cerámica | Joyería y Accesorios de Arcilla</title>
+    <!-- Incrementamos la versión para forzar al navegador a leer la nueva paleta de colores -->
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado con Logo a la Izquierda y Menú a la Derecha -->
+    <header class="navbar">
+        <div class="bloque-marca">
+            <div class="contenedor-logo">
+                <img src="logo agc.png" alt="Atelier Gala Cerámica Logo" class="img-logo">
+            </div>
+            <div class="texto-marca">
+                <div class="logo-titulo">ATELIER GALA</div>
+                <div class="logo-subtitulo">CERÁMICA</div>
+            </div>
+        </div>
+        <nav class="menu-navegacion">
+            <a href="#catalogo">Colección</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Presentación de Marca -->
+    <section class="hero">
+        <h1>Modelado a mano, pensado para ti.</h1>
+        <p>Piezas únicas de arcilla que cuentan una historia.</p>
+    </section>
+
+    <!-- Sección de Productos (Colección Princesas) -->
     <main id="catalogo" class="contenedor-catalogo">
         <h2 class="titulo-seccion">Colección Princesas</h2>
         
+        <!-- Botones de Filtro Interactivos -->
+        <div class="filtros-categoria">
+            <button class="btn-filtro activo" data-filtro="todos">Ver Todo</button>
+            <button class="btn-filtro" data-filtro="aretes">Aretes</button>
+            <button class="btn-filtro" data-filtro="llaveros">Llaveros</button>
+        </div>
+        
         <div class="grid-productos">
             
-            <!-- 1. RAPUNZEL (1.jpg) -->
-            <div class="tarjeta-minimalista">
+            <!-- 1. RAPUNZEL (Aretes) -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
                 <div class="caja-foto">
                     <img src="1.png" alt="Aretes Rapunzel" class="foto-producto">
                 </div>
@@ -14,12 +58,12 @@
                     <p class="categoria">Edición Princesas</p>
                     <p class="descripcion">Aretes asimétricos con el tierno rostro de Rapunzel y su leal compañero Pascal, detallados a mano con destellos brillantes.</p>
                     <div class="precio">$18.00</div>
-                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Rapunzel" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Rapunzel" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
                 </div>
             </div>
 
-            <!-- 2. BELLA (2.jpg) -->
-            <div class="tarjeta-minimalista">
+            <!-- 2. BELLA (Aretes) -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
                 <div class="caja-foto">
                     <img src="2.png" alt="Aretes Bella" class="foto-producto">
                 </div>
@@ -32,8 +76,8 @@
                 </div>
             </div>
 
-            <!-- 3. BLANCANIEVES (3.jpg) -->
-            <div class="tarjeta-minimalista">
+            <!-- 3. BLANCANIEVES (Aretes) -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
                 <div class="caja-foto">
                     <img src="3.png" alt="Aretes Blancanieves" class="foto-producto">
                 </div>
@@ -46,8 +90,8 @@
                 </div>
             </div>
 
-            <!-- 4. CENICIENTA (4.jpg) -->
-            <div class="tarjeta-minimalista">
+            <!-- 4. CENICIENTA (Aretes) -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
                 <div class="caja-foto">
                     <img src="4.png" alt="Aretes Cenicienta" class="foto-producto">
                 </div>
@@ -60,8 +104,8 @@
                 </div>
             </div>
 
-            <!-- 5. JASMÍN (5.jpg) -->
-            <div class="tarjeta-minimalista">
+            <!-- 5. JASMÍN (Aretes) -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
                 <div class="caja-foto">
                     <img src="5.png" alt="Aretes Jasmín" class="foto-producto">
                 </div>
@@ -74,8 +118,8 @@
                 </div>
             </div>
 
-            <!-- 6. MULÁN (6.jpg) -->
-            <div class="tarjeta-minimalista">
+            <!-- 6. MULÁN (Aretes) -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
                 <div class="caja-foto">
                     <img src="6.png" alt="Aretes Mulán" class="foto-producto">
                 </div>
@@ -88,8 +132,8 @@
                 </div>
             </div>
 
-            <!-- 7. ARIEL (7.jpg) -->
-            <div class="tarjeta-minimalista">
+            <!-- 7. ARIEL (Aretes) -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
                 <div class="caja-foto">
                     <img src="7.png" alt="Aretes Ariel" class="foto-producto">
                 </div>
@@ -102,8 +146,8 @@
                 </div>
             </div>
 
-            <!-- 8. TIANA (8.jpg) -->
-            <div class="tarjeta-minimalista">
+            <!-- 8. TIANA (Aretes) -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
                 <div class="caja-foto">
                     <img src="8.png" alt="Aretes Tiana" class="foto-producto">
                 </div>
@@ -116,8 +160,8 @@
                 </div>
             </div>
 
-            <!-- 9. ALICIA (9.jpg) -->
-            <div class="tarjeta-minimalista">
+            <!-- 9. ALICIA (Aretes) -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
                 <div class="caja-foto">
                     <img src="9.png" alt="Aretes Alicia" class="foto-producto">
                 </div>
@@ -132,3 +176,12 @@
 
         </div>
     </main>
+
+    <!-- Pie de página -->
+    <footer id="contacto" class="footer">
+        <p>© 2026 Atelier Gala Cerámica. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

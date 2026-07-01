@@ -1,4 +1,8 @@
-/* Reseteo general */
+/* =======================================================
+   ATELIER GALA CERÁMICA - PALETA TIERRAS Y CREMAS PREMIUM
+   ======================================================= */
+
+/* Reseteo e Inicialización Básica */
 * {
     margin: 0;
     padding: 0;
@@ -7,175 +11,258 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #fcfcfc; /* Un blanco crudo muy artístico */
-    color: #2b2b2b;
-    letter-spacing: 0.5px;
+    background-color: #f7f4ee; /* Hermoso tono cremita bajito y orgánico */
+    color: #3e2a20;            /* Elegante marrón oscuro profundo */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Navbar Minimalista */
+/* Cabecera / Navbar Profesional (Logo Izquierda, Menú Derecha) */
 .navbar {
     display: flex;
-    flex-direction: column; /* Centrado vertical elegante */
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 6%;
+    background-color: #ffffff; /* Bloque blanco para separar el encabezado */
+    border-bottom: 1px solid #ebdcd0;
 }
 
-.logo {
-    font-size: 1.4rem;
+/* Bloque alineado a la izquierda */
+.bloque-marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contenedor-logo {
+    max-width: 65px; /* Reducido para encajar perfectamente a un lado */
+}
+
+.img-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.texto-marca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-titulo {
+    font-size: 1.15rem;
     font-weight: 600;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
+    color: #3e2a20; /* Nombre completo en marrón oscuro */
 }
 
-.sublogo {
-    font-size: 0.75rem;
-    font-weight: 200;
-    letter-spacing: 6px;
-    color: #777;
-    margin-top: 2px;
-    margin-bottom: 15px;
+.logo-subtitulo {
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #7a635a; /* Marrón más suave para el subtítulo */
+    text-transform: uppercase;
+    margin-top: 1px;
 }
 
-.navbar nav a {
+/* Menú de navegación a la derecha */
+.menu-navegacion a {
     text-decoration: none;
-    color: #666;
-    margin: 0 15px;
-    font-size: 0.85rem;
-    transition: color 0.3s;
+    color: #7a635a;
+    margin-left: 25px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
 }
 
-.navbar nav a:hover {
-    color: #000;
+.menu-navegacion a:hover {
+    color: #3e2a20;
 }
 
-/* Hero */
+/* Sección Hero / Introducción */
 .hero {
     text-align: center;
-    padding: 60px 20px;
-    background-color: #ffffff;
+    padding: 70px 20px 40px 20px;
 }
 
 .hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 200;
-    color: #111;
-    margin-bottom: 10px;
+    color: #3e2a20;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
 }
 
 .hero p {
-    font-size: 0.9rem;
-    color: #888;
+    font-size: 0.95rem;
+    color: #7a635a;
     font-weight: 400;
 }
 
-/* Contenedor del Catálogo */
+/* Contenedor del Catálogo y Títulos */
 .contenedor-catalogo {
-    padding: 40px 5%;
+    padding: 40px 6%;
 }
 
 .titulo-seccion {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
-    letter-spacing: 3px;
-    margin-bottom: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 45px;
     text-transform: uppercase;
-    color: #555;
+    color: #3e2a20;
 }
 
-/* Grilla - Separados uno por uno perfectamente */
+/* Sistema de Filtros */
+.filtros-categoria {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+
+.btn-filtro {
+    background: #ffffff;
+    border: 1px solid #ebdcd0;
+    color: #7a635a;
+    padding: 10px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-filtro:hover, .btn-filtro.activo {
+    background-color: #3e2a20; /* Filtro activo en marrón oscuro */
+    color: #ffffff;
+    border-color: #3e2a20;
+}
+
+/* Estructura Grid */
 .grid-productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px; /* Bastante espacio para que "respiren" las fotos */
+    gap: 45px;
 }
 
-/* Tarjeta Minimalista Ajustada */
+/* Tarjeta Minimalista Cerámica */
 .tarjeta-minimalista {
-    background-color: #ffffff;
-    border-radius: 0px; /* Bordes rectos para un look más arquitectónico y profesional */
-    overflow: hidden;
+    background-color: #ffffff; /* Tarjeta blanca para hacer contraste con el fondo crema */
+    border: 1px solid #ebdcd0;
     display: flex;
     flex-direction: column;
-    transition: opacity 0.3s;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Caja de la foto: Imagen ARRIBA */
+.tarjeta-minimalista:hover {
+    box-shadow: 0 10px 25px rgba(118, 92, 72, 0.06); /* Sombra cálida muy tenue */
+}
+
+/* Caja de la foto */
 .caja-foto {
-    background-color: #f7f7f7; /* Fondo neutro para resaltar la arcilla */
-    height: 350px;
+    background-color: #ffffff; 
+    height: 360px;            
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;         
+    border-bottom: 1px solid #f7f7f7;
+    padding: 15px;            
 }
 
 .foto-producto {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Hace que la foto cubra todo el espacio de forma limpia */
+    max-width: 100% !important;  
+    max-height: 100% !important; 
+    width: auto !important;      
+    height: auto !important;     
+    object-fit: contain !important; 
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Detalles del Producto: Información ABAJO */
+.tarjeta-minimalista:hover .foto-producto {
+    transform: scale(1.04);
+}
+
+/* Detalles del Producto */
 .detalles-producto {
-    padding: 20px 10px;
-    text-align: left; /* Alineado a la izquierda se ve más premium */
+    padding: 25px 20px 20px 20px;
+    text-align: left;
 }
 
 .detalles-producto h3 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 400;
+    color: #1a1a1a;
     margin-bottom: 4px;
 }
 
 .categoria {
-    font-size: 0.75rem;
-    color: #a0a0a0;
+    font-size: 0.7rem;
+    color: #8c786c; /* Color arcilla suave para la subcategoría */
     text-transform: uppercase;
-    margin-bottom: 12px;
-    letter-spacing: 1px;
+    margin-bottom: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
 }
 
 .detalles-producto .descripcion {
     font-size: 0.85rem;
-    color: #666;
-    margin-bottom: 15px;
-    height: 45px; /* Evita que las tarjetas se desalineen */
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    height: 55px;
 }
 
 .detalles-producto .precio {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    color: #000;
-    margin-bottom: 15px;
+    color: #111111;
+    margin-bottom: 20px;
 }
 
-/* Botón WhatsApp Elegante */
+/* Botón de WhatsApp Marrón Oscuro */
 .btn-whatsapp {
     display: block;
     text-align: center;
-    padding: 12px;
-    background-color: #111; /* Botón negro sólido, muy chic */
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.8rem;
+    padding: 14px;
+    background-color: #3e2a20; /* Botón marrón oscuro corporativo */
+    color: #ffffff !important;   
+    text-decoration: none !important; 
+    font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .btn-whatsapp:hover {
-    background-color: #444;
+    background-color: #594235; /* Marrón ligeramente más claro al pasar el mouse */
 }
 
-/* Footer */
+/* Ocultar para filtros */
+.tarjeta-minimalista.oculto {
+    display: none;
+}
+
+/* Pie de Página */
 .footer {
     text-align: center;
-    padding: 40px;
+    padding: 50px 20px;
     font-size: 0.75rem;
-    color: #aaa;
+    letter-spacing: 1px;
+    color: #7a635a;
     background-color: #ffffff;
-    border-top: 1px solid #f0f0f0;
-    margin-top: 60px;
+    border-top: 1px solid #ebdcd0;
+    margin-top: 80px;
 }
