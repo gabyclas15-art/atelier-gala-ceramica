@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atelier Gala Cerámica | Joyería y Accesorios de Arcilla</title>
-    <!-- Incrementamos la versión para forzar al navegador a leer la nueva paleta de colores -->
-    <link rel="stylesheet" href="style.css?v=3">
+    <!-- Actualizamos la versión a v=9 para cargar los llaveros -->
+    <link rel="stylesheet" href="style.css?v=9">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -35,9 +35,9 @@
         <p>Piezas únicas de arcilla que cuentan una historia.</p>
     </section>
 
-    <!-- Sección de Productos (Colección Princesas) -->
+    <!-- Sección de Productos (Catálogo Global por Colecciones) -->
     <main id="catalogo" class="contenedor-catalogo">
-        <h2 class="titulo-seccion">Colección Princesas</h2>
+        <h2 class="titulo-seccion">Catálogo de Piezas</h2>
         
         <!-- Botones de Filtro Interactivos -->
         <div class="filtros-categoria">
@@ -46,135 +46,579 @@
             <button class="btn-filtro" data-filtro="llaveros">Llaveros</button>
         </div>
         
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN PRINCESAS
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Princesas</h2>
         <div class="grid-productos">
-            
-            <!-- 1. RAPUNZEL (Aretes) -->
+            <!-- 1 a 9 Princesas -->
             <div class="tarjeta-minimalista" data-categoria="aretes">
-                <div class="caja-foto">
-                    <img src="1.png" alt="Aretes Rapunzel" class="foto-producto">
-                </div>
+                <div class="caja-foto"><img src="1.png" alt="Aretes Rapunzel" class="foto-producto"></div>
                 <div class="detalles-producto">
-                    <h3>Colección Rapunzel</h3>
-                    <p class="categoria">Edición Princesas</p>
-                    <p class="descripcion">Aretes asimétricos con el tierno rostro de Rapunzel y su leal compañero Pascal, detallados a mano con destellos brillantes.</p>
-                    <div class="precio">$18.00</div>
-                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Rapunzel" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                    <h3>Colección Rapunzel</h3><p class="categoria">Edición Princesas</p><p class="descripcion">Aretes asimétricos con el tierno rostro de Rapunzel y su leal compañero Pascal, detallados a mano con destellos brillantes.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Rapunzel" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
                 </div>
             </div>
-
-            <!-- 2. BELLA (Aretes) -->
             <div class="tarjeta-minimalista" data-categoria="aretes">
-                <div class="caja-foto">
-                    <img src="2.png" alt="Aretes Bella" class="foto-producto">
-                </div>
+                <div class="caja-foto"><img src="2.png" alt="Aretes Bella" class="foto-producto"></div>
                 <div class="detalles-producto">
-                    <h3>Colección Bella</h3>
-                    <p class="categoria">Edición Princesas</p>
-                    <p class="descripcion">Inspirados en un clásico eterno. Un arete lleva el dulce rostro de Bella y el otro una delicada rosa roja texturizada.</p>
-                    <div class="precio">$18.00</div>
-                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Bella" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                    <h3>Colección Bella</h3><p class="categoria">Edición Princesas</p><p class="descripcion">Inspirados en un clásico eterno. Un arete lleva el dulce rostro de Bella y el otro una delicada rosa roja texturizada.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Bella" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
                 </div>
             </div>
-
-            <!-- 3. BLANCANIEVES (Aretes) -->
             <div class="tarjeta-minimalista" data-categoria="aretes">
-                <div class="caja-foto">
-                    <img src="3.png" alt="Aretes Blancanieves" class="foto-producto">
-                </div>
+                <div class="caja-foto"><img src="3.png" alt="Aretes Blancanieves" class="foto-producto"></div>
                 <div class="detalles-producto">
-                    <h3>Colección Blancanieves</h3>
-                    <p class="categoria">Edición Princesas</p>
-                    <p class="descripcion">Lleva la magia del bosque contigo. Un diseño asimétrico que combina a Blancanieves con su icónica manzana carmesí.</p>
-                    <div class="precio">$18.00</div>
-                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Blancanieves" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                    <h3>Colección Blancanieves</h3><p class="categoria">Edición Princesas</p><p class="descripcion">Lleva la magia del bosque contigo. Un diseño asimétrico que combina a Blancanieves con su icónica manzana carmesí.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Blancanieves" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
                 </div>
             </div>
-
-            <!-- 4. CENICIENTA (Aretes) -->
             <div class="tarjeta-minimalista" data-categoria="aretes">
-                <div class="caja-foto">
-                    <img src="4.png" alt="Aretes Cenicienta" class="foto-producto">
-                </div>
+                <div class="caja-foto"><img src="4.png" alt="Aretes Cenicienta" class="foto-producto"></div>
                 <div class="detalles-producto">
-                    <h3>Colección Cenicienta</h3>
-                    <p class="categoria">Edición Princesas</p>
-                    <p class="descripcion">Inspirados en los sueños de medianoche, este par une a Cenicienta con su reluciente zapatilla de cristal con acabados de escarcha sutil.</p>
-                    <div class="precio">$18.00</div>
-                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Cenicienta" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                    <h3>Colección Cenicienta</h3><p class="categoria">Edición Princesas</p><p class="descripcion">Inspirados en los sueños de medianoche, este par une a Cenicienta con su reluciente zapatilla de cristal con acabados de escarcha sutil.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Cenicienta" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
                 </div>
             </div>
-
-            <!-- 5. JASMÍN (Aretes) -->
             <div class="tarjeta-minimalista" data-categoria="aretes">
-                <div class="caja-foto">
-                    <img src="5.png" alt="Aretes Jasmín" class="foto-producto">
-                </div>
+                <div class="caja-foto"><img src="5.png" alt="Aretes Jasmín" class="foto-producto"></div>
                 <div class="detalles-producto">
-                    <h3>Colección Jasmín</h3>
-                    <p class="categoria">Edición Princesas</p>
-                    <p class="descripcion">Un viaje mágico hecho accesorio. Luce el detallado rostro de Jasmín junto a la mística lámpara dorada de los deseos.</p>
-                    <div class="precio">$18.00</div>
-                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Jasmín" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                    <h3>Colección Jasmín</h3><p class="categoria">Edición Princesas</p><p class="descripcion">Un viaje mágico hecho accesorio. Luce el detallado rostro de Jasmín junto a la mística lámpara dorada de los deseos.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Jasmín" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
                 </div>
             </div>
-
-            <!-- 6. MULÁN (Aretes) -->
             <div class="tarjeta-minimalista" data-categoria="aretes">
-                <div class="caja-foto">
-                    <img src="6.png" alt="Aretes Mulán" class="foto-producto">
-                </div>
+                <div class="caja-foto"><img src="6.png" alt="Aretes Mulán" class="foto-producto"></div>
                 <div class="detalles-producto">
-                    <h3>Colección Mulán</h3>
-                    <p class="categoria">Edición Princesas</p>
-                    <p class="descripcion">Honor y elegancia en sintonía. Hermosos aretes que presentan a Mulán acompañada de una delicada flor de loto rosada.</p>
-                    <div class="precio">$18.00</div>
-                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Mulán" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                    <h3>Colección Mulán</h3><p class="categoria">Edición Princesas</p><p class="descripcion">Honor y elegancia en sintonía. Hermosos aretes que presentan a Mulán acompañada de una delicada flor de loto rosada.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Mulán" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
                 </div>
             </div>
-
-            <!-- 7. ARIEL (Aretes) -->
             <div class="tarjeta-minimalista" data-categoria="aretes">
-                <div class="caja-foto">
-                    <img src="7.png" alt="Aretes Ariel" class="foto-producto">
-                </div>
+                <div class="caja-foto"><img src="7.png" alt="Aretes Ariel" class="foto-producto"></div>
                 <div class="detalles-producto">
-                    <h3>Colección Ariel</h3>
-                    <p class="categoria">Edición Princesas</p>
-                    <p class="descripcion">Directo desde las profundidades del mar. El diseño modela el vibrante cabello de Ariel y una brillante concha marina lila.</p>
-                    <div class="precio">$18.00</div>
-                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Ariel" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                    <h3>Colección Ariel</h3><p class="categoria">Edición Princesas</p><p class="descripcion">Directo desde las profundidades del mar. El diseño modela el vibrante cabello de Ariel y una brillante concha marina lila.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Ariel" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
                 </div>
             </div>
-
-            <!-- 8. TIANA (Aretes) -->
             <div class="tarjeta-minimalista" data-categoria="aretes">
-                <div class="caja-foto">
-                    <img src="8.png" alt="Aretes Tiana" class="foto-producto">
-                </div>
+                <div class="caja-foto"><img src="8.png" alt="Aretes Tiana" class="foto-producto"></div>
                 <div class="detalles-producto">
-                    <h3>Colección Tiana</h3>
-                    <p class="categoria">Edición Princesas</p>
-                    <p class="descripcion">Un diseño lleno de encanto y perseverancia. Muestra a Tiana luciendo su corona junto a su simpático compañero el sapito.</p>
-                    <div class="precio">$18.00</div>
-                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Tiana" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                    <h3>Colección Tiana</h3><p class="categoria">Edición Princesas</p><p class="descripcion">Un diseño lleno de encanto y perseverancia. Muestra a Tiana luciendo su corona junto a su simpático compañero el sapito.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Tiana" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
                 </div>
             </div>
-
-            <!-- 9. ALICIA (Aretes) -->
             <div class="tarjeta-minimalista" data-categoria="aretes">
-                <div class="caja-foto">
-                    <img src="9.png" alt="Aretes Alicia" class="foto-producto">
-                </div>
+                <div class="caja-foto"><img src="9.png" alt="Aretes Alicia" class="foto-producto"></div>
                 <div class="detalles-producto">
-                    <h3>Colección Alicia</h3>
-                    <p class="categoria">Edición Princesas</p>
-                    <p class="descripcion">Sumérgete en el País de las Maravillas con este tierno par asimétrico del rostro de Alicia y una carta de corazones modelada a mano.</p>
-                    <div class="precio">$18.00</div>
-                    <a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Alicia" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                    <h3>Colección Alicia</h3><p class="categoria">Edición Princesas</p><p class="descripcion">Sumérgete en el País de las Maravillas con este tierno par asimétrico del rostro de Alicia y una carta de corazones modelada a mano.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Colección%20Alicia" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
                 </div>
             </div>
-
         </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN TOTORO
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Totoro</h2>
+        <div class="grid-productos">
+            <!-- 10 a 12 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="29.png" alt="Aretes Duendes del Polvo Estrella" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Duendecillo y Estrella</h3><p class="categoria">Edición Anime</p><p class="descripcion">Tiernos Susuwatari modelados a mano junto a su dulce estrella de caramelo verde.</p>
+                    <div class="precio">S/ 11.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Duendecillo%20y%20Estrella" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="30.png" alt="Aretes Duendes del Polvo Chispitas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Chispitas de Susuwatari</h3><p class="categoria">Edición Anime</p><p class="descripcion">Par de duendecillos del polvo repletos de magia, acompañados por coloridas chispitas.</p>
+                    <div class="precio">S/ 11.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Chispitas%20de%20Susuwatari" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="31.png" alt="Aretes Mini Totoro Blanco" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Mini Totoro Blanco</h3><p class="categoria">Edición Anime</p><p class="descripcion">El mismísimo espíritu del bosque en su forma más pequeña, chiquita y tierna, con su hojita.</p>
+                    <div class="precio">S/ 11.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Mini%20Totoro%20Blanco" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN SAILOR MOON
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Sailor Moon</h2>
+        <div class="grid-productos">
+            <!-- 13 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="32.png" alt="Aretes Gatita Luna" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Gatita Luna</h3><p class="categoria">Edición Anime</p><p class="descripcion">Delicados aretes de la tierna gatita negra Luna, detallados minuciosamente con su icónica luna dorada.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20Gatita%20Luna" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN KIRBY
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Kirby</h2>
+        <div class="grid-productos">
+            <!-- 14 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="33.png" alt="Aretes Kirby y Estrella" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Kirby y Estrella</h3><p class="categoria">Edición Videojuegos</p><p class="descripcion">El adorable y glotón Kirby rosado modelado a mano junto a su icónica estrella warp dorada.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20la%20pieza%20Kirby%20y%20Estrella" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN SNOOPY
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Snoopy</h2>
+        <div class="grid-productos">
+            <!-- 15 y 16 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="34.png" alt="Aretes Snoopy Clásico" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Snoopy Clásico</h3><p class="categoria">Edición Cómics</p><p class="descripcion">El perrito más querido del mundo modelado con precisión y cariño. Un diseño en blanco y negro.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Snoopy%20Clásico" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="35.png" alt="Aretes Snoopy" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Mundo de Snoopy</h3><p class="categoria">Edición Cómics</p><p class="descripcion">Lleva contigo la alegría y la magia de esta hermosa caricatura con estos aretes detallados a mano.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Mundo%20de%20Snoopy" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN GATUNA
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Gatuna</h2>
+        <div class="grid-productos">
+            <!-- 17 a 20 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="14.png" alt="Aretes Gatito Negro y Huellita" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Misterio Felino</h3><p class="categoria">Edición Gatuna</p><p class="descripcion">Aretes asimétricos con el rostro de un misterioso gatito negro de vibrantes ojos verdes y su huellita.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Misterio%20Felino" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="15.png" alt="Aretes Siluetas Felinas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Siluetas Felinas</h3><p class="categoria">Edición Gatuna</p><p class="descripcion">Elegantes aretes con la silueta de gatitos, perfectos para las amantes de los felinos con un toque delicado.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Siluetas%20Felinas" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="16.png" alt="Aretes Gatitos en Silueta" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Amor de Gato</h3><p class="categoria">Edición Gatuna</p><p class="descripcion">Un diseño clásico y versátil que captura la curiosa y tierna forma de los gatos en una hermosa silueta.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Amor%20de%20Gato" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="17.png" alt="Aretes Gatito Marrón y Pescadito" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Michi y Pescadito</h3><p class="categoria">Edición Gatuna</p><p class="descripcion">Tierno gatito de tonos tierra acompañado de su pequeña y deliciosa cena, un lindo pescadito.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Michi%20y%20Pescadito" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN ANIMALES
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Animales</h2>
+        <div class="grid-productos">
+            <!-- 21 a 23 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="18.png" alt="Aretes Pingüino" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Pingüino Glotón</h3><p class="categoria">Edición Animales</p><p class="descripcion">Un adorable pingüinito bicolor modelado a mano acompañado de su comida favorita, un pescadito.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Pingüino%20Glotón" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="19.png" alt="Aretes Conejito y Fresita" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Conejito Frutal</h3><p class="categoria">Edición Animales</p><p class="descripcion">La dulzura hecha accesorio. Un delicado conejito blanco emparejado con una jugosa y pequeña fresita.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Conejito%20Frutal" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="20.png" alt="Aretes Ranita y Hoja de Loto" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Sapito de Estanque</h3><p class="categoria">Edición Animales</p><p class="descripcion">Un simpático sapito de estanque descansando felizmente junto a una hermosa hoja de loto verde vibrante.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Sapito%20de%20Estanque" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN FRUTAS
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Frutas</h2>
+        <div class="grid-productos">
+            <!-- 24 a 26 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="11.png" alt="Aretes Arándanos" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Arándanos Silvestres</h3><p class="categoria">Edición Frutas</p><p class="descripcion">Un jugoso par de arándanos modelados a mano con un hermoso tono azul profundo. Sencillos y frescos.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Arándanos%20Silvestres" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="12.png" alt="Aretes Fresita Rosada y Flor" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Fresita y Flor</h3><p class="categoria">Edición Frutas</p><p class="descripcion">Aretes asimétricos que combinan una dulce fresa rosada en tono pastel con la delicada flor blanca de su fruto.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Fresita%20y%20Flor" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="13.png" alt="Aretes Fresitas Clásicas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Fresitas Clásicas</h3><p class="categoria">Edición Frutas</p><p class="descripcion">Par de deliciosas y vibrantes fresas rojas tradicionales. Un toque frutal, llamativo y alegre para tu outfit.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Fresitas%20Clásicas" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN POSTRES
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Postres</h2>
+        <div class="grid-productos">
+            <!-- 27 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="10.png" alt="Aretes Galletas con Chispas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Galletas con Chispas</h3><p class="categoria">Edición Postres</p><p class="descripcion">Deliciosas y tiernas galletitas modeladas como recién salidas del horno, con sus inconfundibles chispas.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Galletas%20con%20Chispas" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN BOSQUE Y FLORES
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Bosque y Flores</h2>
+        <div class="grid-productos">
+            <!-- 28 a 35 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="21.png" alt="Aretes Mini Honguitos" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Mini Honguitos</h3><p class="categoria">Edición Bosque</p><p class="descripcion">Pequeños y encantadores honguitos rojos de bosque. Un detalle sutil, minimalista y lleno de magia.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Mini%20Honguitos" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="22.png" alt="Aretes Honguitos del Bosque" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Hongos del Bosque</h3><p class="categoria">Edición Bosque</p><p class="descripcion">Clásicos hongos rojos con sus pintitas blancas, ideales para las amantes de los cuentos de hadas.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Hongos%20del%20Bosque" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="23.png" alt="Aretes Margaritas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Margaritas de Primavera</h3><p class="categoria">Edición Flores</p><p class="descripcion">Hermosas y delicadas flores de margarita blancas con su centro amarillo, perfectas para un toque romántico.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Margaritas%20de%20Primavera" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="24.png" alt="Aretes Tulipanes" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Tulipanes en Flor</h3><p class="categoria">Edición Flores</p><p class="descripcion">Coloridos y elegantes tulipanes modelados con sutileza, un verdadero tributo a la belleza primaveral.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Tulipanes%20en%20Flor" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="25.png" alt="Aretes Tulipán y Hojita" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Tulipán y Hojita</h3><p class="categoria">Edición Flores</p><p class="descripcion">Tierno par asimétrico que une un hermoso tulipán naciente de color pastel con su pequeña y delicada hojita.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Tulipán%20y%20Hojita" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="26.png" alt="Aretes Mariquitas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Mariquitas de la Suerte</h3><p class="categoria">Edición Bosque</p><p class="descripcion">Par de vibrantes y adorables mariquitas rojas con sus puntitos, listas para posarse en tus orejas.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Mariquitas%20de%20la%20Suerte" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="27.png" alt="Aretes Margaritas y Mariquitas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Margaritas y Mariquitas</h3><p class="categoria">Edición Flores</p><p class="descripcion">Un dúo perfecto de la naturaleza: delicadas margaritas blancas con una tierna mariquita roja posada.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Margaritas%20y%20Mariquitas" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="28.png" alt="Aretes Hojitas y Mariquitas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Hojitas y Mariquitas</h3><p class="categoria">Edición Bosque</p><p class="descripcion">Aretes inspirados en un fresco jardín, mostrando vibrantes hojas verdes con una pequeña mariquita roja.</p>
+                    <div class="precio">S/ 12.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Hojitas%20y%20Mariquitas" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN TOTORO 2
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Totoro 2</h2>
+        <div class="grid-productos">
+            <!-- 36 y 37 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="39.png" alt="Aretes Largos Totoro y Mariposas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Totoro y Mariposas</h3><p class="categoria">Edición Anime</p><p class="descripcion">Aretes largos con el encantador Totoro acompañado de mariposas y una hojita. Un diseño muy vistoso.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Totoro%20y%20Mariposas" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="40.png" alt="Aretes Largos Totoro con Hoja" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Totoro del Bosque</h3><p class="categoria">Edición Anime</p><p class="descripcion">El icónico Totoro con su clásica hojita en la cabeza haciendo juego con otra hojita verde, en asas largas.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Totoro%20del%20Bosque" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN SNOOPY 2
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Snoopy 2</h2>
+        <div class="grid-productos">
+            <!-- 38 y 39 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="41.png" alt="Aretes Largos Snoopy y Estrella" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Snoopy y Estrellita</h3><p class="categoria">Edición Cómics</p><p class="descripcion">Aretes largos de Snoopy de cuerpo completo modelado a mano, adornados con un dije de estrella brillante.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Snoopy%20y%20Estrellita" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="42.png" alt="Aretes Largos Snoopy en Flor" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Snoopy en Flor</h3><p class="categoria">Edición Cómics</p><p class="descripcion">Delicadas placas de arcilla en forma de flor blanca con el dibujo de Snoopy y un encantador dije azul.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Snoopy%20en%20Flor" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN GATUNA 2
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Gatuna 2</h2>
+        <div class="grid-productos">
+            <!-- 40 y 41 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="37.png" alt="Aretes Gatitos Manzana" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Gatitos Manzana</h3><p class="categoria">Edición Gatuna</p><p class="descripcion">Aretes largos de misteriosos gatitos negros con vibrantes ojos verdes, luciendo un adorable gorrito de manzana.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Gatitos%20Manzana" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="38.png" alt="Aretes Gatitos Tulipán" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Gatitos Tulipán</h3><p class="categoria">Edición Gatuna</p><p class="descripcion">Tiernos y delicados gatitos blancos modelados a mano en asas largas, sosteniendo un hermoso tulipán.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Gatitos%20Tulipán" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN ANIMALES 2
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Animales 2</h2>
+        <div class="grid-productos">
+            <!-- 42 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="36.png" alt="Aretes Hámsters" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Hámsters Regorditos</h3><p class="categoria">Edición Animales</p><p class="descripcion">Simpáticos y regorditos hámsters en tonos marrón y blanco, acompañados de un elegante dije cuadrado blanco.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Hámsters%20Regorditos" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN FRUTAS 2
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Frutas 2</h2>
+        <div class="grid-productos">
+            <!-- 43 y 44 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="49.png" alt="Aretes Manzanitas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Dulces Manzanitas</h3><p class="categoria">Edición Frutas</p><p class="descripcion">Un par frutal súper original: una manzanita entera y la otra partida a la mitad, mostrando su dulce interior.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Dulces%20Manzanitas" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="50.png" alt="Aretes Fresitas y Hojitas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Fresitas y Hojitas</h3><p class="categoria">Edición Frutas</p><p class="descripcion">Dos vibrantes y jugosas fresitas rojas acompañadas de sus respectivas hojitas verdes. Frescura y color.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Fresitas%20y%20Hojitas" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN POSTRES 2
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Postres 2</h2>
+        <div class="grid-productos">
+            <!-- 45 a 50 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="43.png" alt="Aretes Torta de Arándanos" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Torta de Arándanos</h3><p class="categoria">Edición Postres</p><p class="descripcion">Rodaja de torta rellena de mermelada de arándanos, glaseado blanco y decorada con hojitas de hierbabuena.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Torta%20de%20Arándanos" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="44.png" alt="Aretes Cheesecake de Moras" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Cheesecake de Moras</h3><p class="categoria">Edición Postres</p><p class="descripcion">Deliciosa porción de cheesecake de frutos rojos y moras. Un postre modelado a mano que te enamorará.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Cheesecake%20de%20Moras" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="45.png" alt="Aretes Cheesecake de Limón" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Cheesecake de Limón</h3><p class="categoria">Edición Postres</p><p class="descripcion">Fresco y dulce cheesecake de limón. El toque cítrico y pastelero perfecto para llevar en tus orejas.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Cheesecake%20de%20Limón" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="46.png" alt="Aretes Torta de Fresa" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Torta de Fresa</h3><p class="categoria">Edición Postres</p><p class="descripcion">Rodaja de torta de vainilla con capas de mermelada de fresa y un provocativo glaseado rosado por encima.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Torta%20de%20Fresa" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="47.png" alt="Aretes Galletas Corazón" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Galletas Corazón</h3><p class="categoria">Edición Postres</p><p class="descripcion">Románticas galletitas rellenas de fresa, con un icónico y tierno centro en forma de corazón calado en medio.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Galletas%20Corazón" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="48.png" alt="Aretes Galletas con Chispas Largas" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Galletas y Chispas</h3><p class="categoria">Edición Postres</p><p class="descripcion">Las clásicas galletas con chispas de chocolate en versión aretes largos. Un antojo dulce y súper combinable.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Galletas%20y%20Chispas" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN BOSQUE Y FLORES 2
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Bosque y Flores 2</h2>
+        <div class="grid-productos">
+            <!-- 51 y 52 -->
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="51.png" alt="Aretes Hongos y Mariposa" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Hongos y Mariposa</h3><p class="categoria">Edición Bosque</p><p class="descripcion">Mágicos honguitos de bosque coronados con una delicada mariposa de color verde oscuro posada sobre ellos.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Hongos%20y%20Mariposa" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+            <div class="tarjeta-minimalista" data-categoria="aretes">
+                <div class="caja-foto"><img src="52.png" alt="Aretes Hojitas Otoñales" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Hojitas Otoñales</h3><p class="categoria">Edición Bosque</p><p class="descripcion">Aretes inspirados en la magia del otoño. Hojitas secas en tonos marrones y anaranjados de gran calidez.</p>
+                    <div class="precio">S/ 15.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesan%20los%20Aretes%20Hojitas%20Otoñales" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             NUEVO: SECCIÓN DE LLAVEROS
+             ========================================== -->
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN LLAVEROS KIKI
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Llaveros Kiki</h2>
+        <div class="grid-productos">
+            <!-- 53. LLAVERO KIKI (Imagen 53) -->
+            <div class="tarjeta-minimalista" data-categoria="llaveros">
+                <div class="caja-foto"><img src="53.png" alt="Llavero Gatita Kiki" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Llavero Gatita Kiki</h3><p class="categoria">Edición Llaveros</p><p class="descripcion">Llavero de la gatita negra de Kiki con sutil escarcha. Incluye dijes de un pan largo y un moñito rojo, con una argolla en forma de moño negro.</p>
+                    <div class="precio">S/ 18.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20el%20Llavero%20Gatita%20Kiki" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN LLAVEROS TOTORO
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Llaveros Totoro</h2>
+        <div class="grid-productos">
+            <!-- 54. LLAVERO TOTORO (Imagen 54) -->
+            <div class="tarjeta-minimalista" data-categoria="llaveros">
+                <div class="caja-foto"><img src="54.png" alt="Llavero Totoro y Susuwatari" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Llavero Totoro Mágico</h3><p class="categoria">Edición Llaveros</p><p class="descripcion">Totoro con su hojita verde y escarcha sutil. Trae dijes del Susuwatari negro y su acompañante blanco. Argolla de estrella verde.</p>
+                    <div class="precio">S/ 18.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20el%20Llavero%20Totoro%20Mágico" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN LLAVEROS POSTRES
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Llaveros Postres</h2>
+        <div class="grid-productos">
+            <!-- 55. LLAVERO GALLETA GATUNA (Imagen 55) -->
+            <div class="tarjeta-minimalista" data-categoria="llaveros">
+                <div class="caja-foto"><img src="55.png" alt="Llavero Galleta Gatuna" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Llavero Galleta Gatuna</h3><p class="categoria">Edición Llaveros</p><p class="descripcion">Galleta de gato con chispas de chocolate y escarcha sutil. Incluye dije de tableta de chocolate mordida y argolla de silueta gatuna.</p>
+                    <div class="precio">S/ 18.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20el%20Llavero%20Galleta%20Gatuna" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             SUBTÍTULO: COLECCIÓN LLAVEROS PERSONALIZADOS
+             ========================================== -->
+        <h2 class="titulo-coleccion">Colección Llaveros Personalizados</h2>
+        <div class="grid-productos">
+            <!-- 56. LLAVERO PERRITA BLANCO/NEGRO (Imagen 56) -->
+            <div class="tarjeta-minimalista" data-categoria="llaveros">
+                <div class="caja-foto"><img src="56.png" alt="Llavero Mascota Personalizado" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Llavero Mascota Personalizado</h3><p class="categoria">Edición Llaveros</p><p class="descripcion">Retrato personalizado de perrita negra con blanco y manchitas. Incluye dije de huellita alusiva a sus colores con su nombre al reverso.</p>
+                    <div class="precio">S/ 18.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20el%20Llavero%20Mascota%20Personalizado" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+
+            <!-- 57. LLAVERO CRUCE PASTOR (Imagen 57) -->
+            <div class="tarjeta-minimalista" data-categoria="llaveros">
+                <div class="caja-foto"><img src="57.png" alt="Llavero Mascota Pastor" class="foto-producto"></div>
+                <div class="detalles-producto">
+                    <h3>Llavero Mascota Pastor</h3><p class="categoria">Edición Llaveros</p><p class="descripcion">Retrato personalizado de perrita cruce pastor alemán en tonos mostaza, marrón y negro. Incluye huellita a juego y nombre en la parte posterior.</p>
+                    <div class="precio">S/ 18.00</div><a href="https://wa.me/TU_NUMERO?text=Hola%20Atelier%20Gala,%20me%20interesa%20el%20Llavero%20Mascota%20Pastor" target="_blank" class="btn-whatsapp">Consultar Pieza</a>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!-- Pie de página -->

@@ -1,23 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const botonesFiltro = document.querySelectorAll(".btn-filtro");
-    const tarjetasProductos = document.querySelectorAll(".tarjeta-minimalista");
+    const botones = document.querySelectorAll(".btn-filtro");
+    const tarjetas = document.querySelectorAll(".tarjeta-minimalista");
+    const titulos = document.querySelectorAll(".titulo-coleccion");
 
-    botonesFiltro.forEach(boton => {
+    botones.forEach(boton => {
         boton.addEventListener("click", () => {
-            // 1. Cambiar el botón activo visualmente
-            botonesFiltro.forEach(b => b.classList.remove("activo"));
+            // 1. Manejo de botones
+            botones.forEach(b => b.classList.remove("activo"));
             boton.classList.add("activo");
+            const filtro = boton.getAttribute("data-filtro");
 
-            // 2. Filtrar los productos
-            const filtroSeleccionado = boton.getAttribute("data-filtro");
-
-            tarjetasProductos.forEach(tarjeta => {
-                const categoriaTarjeta = tarjeta.getAttribute("data-categoria");
-
-                if (filtroSeleccionado === "todos" || categoriaTarjeta === filtroSeleccionado) {
-                    tarjeta.classList.remove("oculto");
+            // 2. Filtrar tarjetas
+            tarjetas.forEach(tarjeta => {
+                const categoria = tarjeta.getAttribute("data-categoria");
+                if (filtro === "todos" || categoria === filtro) {
+                    tarjeta.style.display = "flex";
                 } else {
-                    tarjeta.classList.add("oculto");
+                    tarjeta.style.display = "none";
+                }
+            });
+
+            // 3. Filtrar títulos (Lógica mejorada)
+            titulos.forEach(titulo => {
+                const siguienteGrid = titulo.nextElementSibling;
+                const esLlavero = siguienteGrid.querySelector('.tarjeta-minimalista[data-categoria="llaveros"]');
+                
+                if (filtro === "todos") {
+                    titulo.style.display = "block";
+                } else if (filtro === "llaveros") {
+                    // Si el filtro es llaveros, solo muestra los títulos que tienen llaveros
+                    titulo.style.display = esLlavero ? "block" : "none";
+                } else if (filtro === "aretes") {
+                    // Si el filtro es aretes, esconde los títulos que son puramente de llaveros
+                    titulo.style.display = esLlavero ? "none" : "block";
                 }
             });
         });

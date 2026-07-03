@@ -2,7 +2,6 @@
    ATELIER GALA CERÁMICA - PALETA TIERRAS Y CREMAS PREMIUM
    ======================================================= */
 
-/* Reseteo e Inicialización Básica */
 * {
     margin: 0;
     padding: 0;
@@ -11,23 +10,22 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f7f4ee; /* Hermoso tono cremita bajito y orgánico */
-    color: #3e2a20;            /* Elegante marrón oscuro profundo */
+    background-color: #f7f4ee; /* Hermoso tono cremita bajito */
+    color: #3e2a20;            /* Elegante marrón oscuro */
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Cabecera / Navbar Profesional (Logo Izquierda, Menú Derecha) */
+/* Cabecera / Navbar (Logo Izquierda, Menú Derecha) */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 6%;
-    background-color: #ffffff; /* Bloque blanco para separar el encabezado */
+    background-color: #ffffff;
     border-bottom: 1px solid #ebdcd0;
 }
 
-/* Bloque alineado a la izquierda */
 .bloque-marca {
     display: flex;
     align-items: center;
@@ -35,7 +33,7 @@ body {
 }
 
 .contenedor-logo {
-    max-width: 65px; /* Reducido para encajar perfectamente a un lado */
+    max-width: 65px;
 }
 
 .img-logo {
@@ -47,26 +45,24 @@ body {
 .texto-marca {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .logo-titulo {
     font-size: 1.15rem;
     font-weight: 600;
     letter-spacing: 3px;
-    color: #3e2a20; /* Nombre completo en marrón oscuro */
+    color: #3e2a20;
 }
 
 .logo-subtitulo {
     font-size: 0.7rem;
     font-weight: 300;
     letter-spacing: 5px;
-    color: #7a635a; /* Marrón más suave para el subtítulo */
+    color: #7a635a;
     text-transform: uppercase;
     margin-top: 1px;
 }
 
-/* Menú de navegación a la derecha */
 .menu-navegacion a {
     text-decoration: none;
     color: #7a635a;
@@ -82,7 +78,7 @@ body {
     color: #3e2a20;
 }
 
-/* Sección Hero / Introducción */
+/* Sección Hero */
 .hero {
     text-align: center;
     padding: 70px 20px 40px 20px;
@@ -99,10 +95,9 @@ body {
 .hero p {
     font-size: 0.95rem;
     color: #7a635a;
-    font-weight: 400;
 }
 
-/* Contenedor del Catálogo y Títulos */
+/* Contenedor del Catálogo */
 .contenedor-catalogo {
     padding: 40px 6%;
 }
@@ -140,34 +135,47 @@ body {
 }
 
 .btn-filtro:hover, .btn-filtro.activo {
-    background-color: #3e2a20; /* Filtro activo en marrón oscuro */
+    background-color: #3e2a20;
     color: #ffffff;
     border-color: #3e2a20;
 }
 
-/* Estructura Grid */
+/* 🌟 ESTRUCTURA GRID CORREGIDA (Evita que las tarjetas solas se estiren a los lados) */
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* auto-fill bloquea el tamaño estándar */
     gap: 45px;
 }
 
-/* Tarjeta Minimalista Cerámica */
+/* 🌟 SUBTÍTULOS DE COLECCIÓN MEJORADOS (Tipografía cursiva fina de boutique, más grandes) */
+.titulo-coleccion {
+    font-family: 'Playfair Display', serif; /* Cambiado a fuente fina artística */
+    font-style: italic;                     /* Efecto cursivo estilizado */
+    font-size: 1.7rem;                      /* Tamaño aumentado más notable */
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #3e2a20;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    border-left: 3px solid #7a635a;        /* Línea sutil café de artesanía */
+    padding-left: 18px;
+}
+
+/* Tarjeta Minimalista */
 .tarjeta-minimalista {
-    background-color: #ffffff; /* Tarjeta blanca para hacer contraste con el fondo crema */
+    background-color: #ffffff;
     border: 1px solid #ebdcd0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: box-shadow 0.3s;
 }
 
 .tarjeta-minimalista:hover {
-    box-shadow: 0 10px 25px rgba(118, 92, 72, 0.06); /* Sombra cálida muy tenue */
+    box-shadow: 0 10px 25px rgba(118, 92, 72, 0.06);
 }
 
-/* Caja de la foto */
 .caja-foto {
     background-color: #ffffff; 
     height: 360px;            
@@ -187,17 +195,15 @@ body {
     height: auto !important;     
     object-fit: contain !important; 
     display: block;
-    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: transform 0.5s ease;
 }
 
 .tarjeta-minimalista:hover .foto-producto {
     transform: scale(1.04);
 }
 
-/* Detalles del Producto */
 .detalles-producto {
     padding: 25px 20px 20px 20px;
-    text-align: left;
 }
 
 .detalles-producto h3 {
@@ -209,7 +215,7 @@ body {
 
 .categoria {
     font-size: 0.7rem;
-    color: #8c786c; /* Color arcilla suave para la subcategoría */
+    color: #8c786c;
     text-transform: uppercase;
     margin-bottom: 14px;
     letter-spacing: 1.5px;
@@ -227,16 +233,16 @@ body {
 .detalles-producto .precio {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #111111;
+    color: #3e2a20;
     margin-bottom: 20px;
 }
 
-/* Botón de WhatsApp Marrón Oscuro */
+/* Botón de WhatsApp */
 .btn-whatsapp {
     display: block;
     text-align: center;
     padding: 14px;
-    background-color: #3e2a20; /* Botón marrón oscuro corporativo */
+    background-color: #3e2a20;
     color: #ffffff !important;   
     text-decoration: none !important; 
     font-size: 0.75rem;
@@ -247,10 +253,9 @@ body {
 }
 
 .btn-whatsapp:hover {
-    background-color: #594235; /* Marrón ligeramente más claro al pasar el mouse */
+    background-color: #594235;
 }
 
-/* Ocultar para filtros */
 .tarjeta-minimalista.oculto {
     display: none;
 }
@@ -265,4 +270,14 @@ body {
     background-color: #ffffff;
     border-top: 1px solid #ebdcd0;
     margin-top: 80px;
+} 
+
+/* Cuando el filtro sea llaveros, ocultamos todas las colecciones de aretes */
+.filtro-llaveros .contenedor-coleccion[data-categoria="aretes"] {
+    display: none;
+}
+
+/* Cuando el filtro sea aretes, ocultamos todas las colecciones de llaveros */
+.filtro-aretes .contenedor-coleccion[data-categoria="llaveros"] {
+    display: none;
 }
