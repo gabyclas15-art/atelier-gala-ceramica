@@ -78,6 +78,45 @@ body {
     color: #3e2a20;
 }
 
+.menu-navegacion {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+#buscador {
+    padding: 8px 14px;
+    border: 1px solid #d8c9c1;
+    border-radius: 999px;
+    background-color: #faf7f2;
+    color: #3e2a20;
+    font-size: 0.9rem;
+    min-width: 180px;
+    max-width: 260px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#buscador:focus {
+    border-color: #3e2a20;
+    box-shadow: 0 0 0 3px rgba(62, 42, 32, 0.08);
+}
+
+.material-select {
+    border: 1px solid #d8c9c1;
+    border-radius: 12px;
+    padding: 10px 12px;
+    background-color: #faf7f2;
+    color: #3e2a20;
+    font-size: 0.95rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.material-select:focus {
+    outline: 2px solid rgba(62, 42, 32, 0.12);
+}
+
 /* Sección Hero */
 .hero {
     text-align: center;

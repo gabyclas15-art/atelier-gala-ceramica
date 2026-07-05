@@ -2,39 +2,50 @@ document.addEventListener("DOMContentLoaded", () => {
     const botones = document.querySelectorAll(".btn-filtro");
     const tarjetas = document.querySelectorAll(".tarjeta-minimalista");
     const titulos = document.querySelectorAll(".titulo-coleccion");
+    const buscador = document.getElementById("buscador");
+
+    const filtrarTarjetas = () => {
+        const termino = buscador.value.trim().toLowerCase();
+        const filtroActivo = document.querySelector(".btn-filtro.activo");
+        const filtro = filtroActivo ? filtroActivo.getAttribute("data-filtro") : "todos";
+
+        tarjetas.forEach(tarjeta => {
+            const categoria = tarjeta.getAttribute("data-categoria");
+            const nombre = tarjeta.querySelector("h3").textContent.toLowerCase();
+            const cumpleNombre = nombre.includes(termino);
+            const cumpleCategoria = filtro === "todos" || categoria === filtro;
+            tarjeta.style.display = cumpleNombre && cumpleCategoria ? "flex" : "none";
+        });
+
+        titulos.forEach(titulo => {
+            const siguienteGrid = titulo.nextElementSibling;
+            if (!siguienteGrid) {
+                titulo.style.display = "none";
+                return;
+            }
+            const tarjetasVisibles = Array.from(siguienteGrid.querySelectorAll('.tarjeta-minimalista')).some(tarjeta => tarjeta.style.display !== 'none');
+            titulo.style.display = tarjetasVisibles ? "block" : "none";
+        });
+    };
 
     botones.forEach(boton => {
         boton.addEventListener("click", () => {
-            // 1. Manejo de botones
             botones.forEach(b => b.classList.remove("activo"));
             boton.classList.add("activo");
-            const filtro = boton.getAttribute("data-filtro");
+            filtrarTarjetas();
+        });
+    });
 
-            // 2. Filtrar tarjetas
-            tarjetas.forEach(tarjeta => {
-                const categoria = tarjeta.getAttribute("data-categoria");
-                if (filtro === "todos" || categoria === filtro) {
-                    tarjeta.style.display = "flex";
-                } else {
-                    tarjeta.style.display = "none";
-                }
-            });
+    buscador.addEventListener("input", filtrarTarjetas);
 
-            // 3. Filtrar títulos (Lógica mejorada)
-            titulos.forEach(titulo => {
-                const siguienteGrid = titulo.nextElementSibling;
-                const esLlavero = siguienteGrid.querySelector('.tarjeta-minimalista[data-categoria="llaveros"]');
-                
-                if (filtro === "todos") {
-                    titulo.style.display = "block";
-                } else if (filtro === "llaveros") {
-                    // Si el filtro es llaveros, solo muestra los títulos que tienen llaveros
-                    titulo.style.display = esLlavero ? "block" : "none";
-                } else if (filtro === "aretes") {
-                    // Si el filtro es aretes, esconde los títulos que son puramente de llaveros
-                    titulo.style.display = esLlavero ? "none" : "block";
-                }
-            });
+    document.querySelectorAll('.material-select').forEach(select => {
+        select.addEventListener('change', (e) => {
+            const tarjeta = e.target.closest('.tarjeta-minimalista');
+            const btn = tarjeta.querySelector('.btn-whatsapp');
+            const material = e.target.options[e.target.selectedIndex].textContent;
+            const nombrePieza = tarjeta.querySelector('h3').textContent;
+            const mensaje = `Hola Atelier Gala, quiero la pieza: ${nombrePieza} con material: ${material}`;
+            btn.href = `https://wa.me/TU_NUMERO?text=${encodeURIComponent(mensaje)}`;
         });
     });
 });
