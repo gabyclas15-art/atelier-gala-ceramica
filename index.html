@@ -29,7 +29,7 @@
         </nav>
         <input type="text" id="buscador" placeholder="Buscar pieza...">
         <button id="abrir-carrito" class="icono-carrito-header" type="button" aria-label="Abrir carrito">
-            🛒 <span id="contador-carrito">0</span>
+            🛒 <span class="carrito-label">Carrito</span> <span id="contador-carrito">0</span>
         </button>
     </header>
 
@@ -37,11 +37,43 @@
     <section class="hero">
         <h1>Modelado a mano, pensado para ti.</h1>
         <p>Piezas únicas de arcilla que cuentan una historia.</p>
+        <a href="#catalogo" class="hero-cta">Ver Catálogo Completo</a>
     </section>
 
     <!-- Sección de Productos (Catálogo Global por Colecciones) -->
     <main id="catalogo" class="contenedor-catalogo">
         <h2 class="titulo-seccion">Catálogo de Piezas</h2>
+        
+        <div class="barra-beneficios" aria-label="Beneficios destacados">
+            <div class="benefit-item">
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 7h18v10H3z"></path>
+                    <path d="M3 10h18"></path>
+                    <path d="M7 14h2"></path>
+                    <path d="M14 14h2"></path>
+                </svg>
+                <span>Envíos a todo el Perú</span>
+            </div>
+            <div class="benefit-item">
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3l1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7L12 3z"></path>
+                    <path d="M5 16l1.2 2.4L8.5 20"></path>
+                    <path d="M19 16l-1.2 2.4L15.5 20"></path>
+                </svg>
+                <span>100% Hecho a mano</span>
+            </div>
+            <div class="benefit-item">
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 6h8a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"></path>
+                    <path d="M6 10h12"></path>
+                    <path d="M8 14h8"></path>
+                    <path d="M9 18h6"></path>
+                    <path d="M10 8V4"></path>
+                    <path d="M14 8V4"></path>
+                </svg>
+                <span>Listo para regalo</span>
+            </div>
+        </div>
         
         <!-- Botones de Filtro Interactivos -->
         <div class="filtros-categoria">
