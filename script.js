@@ -8,13 +8,25 @@ document.addEventListener("DOMContentLoaded", () => {
         const termino = buscador.value.trim().toLowerCase();
         const filtroActivo = document.querySelector(".btn-filtro.activo");
         const filtro = filtroActivo ? filtroActivo.getAttribute("data-filtro") : "todos";
+        const mostrarSoloPersonalizados = filtro === "personalizados";
+        const mostrarTodos = filtro === "todos";
 
         tarjetas.forEach(tarjeta => {
             const categoria = tarjeta.getAttribute("data-categoria");
             const nombre = tarjeta.querySelector("h3").textContent.toLowerCase();
             const cumpleNombre = nombre.includes(termino);
-            const cumpleCategoria = filtro === "todos" || categoria === filtro;
-            tarjeta.style.display = cumpleNombre && cumpleCategoria ? "flex" : "none";
+            const esPersonalizado = categoria === "personalizados";
+            let mostrar = false;
+
+            if (mostrarSoloPersonalizados) {
+                mostrar = esPersonalizado && cumpleNombre;
+            } else if (mostrarTodos) {
+                mostrar = !esPersonalizado && cumpleNombre;
+            } else {
+                mostrar = categoria === filtro && cumpleNombre;
+            }
+
+            tarjeta.style.display = mostrar ? "flex" : "none";
         });
 
         titulos.forEach(titulo => {
@@ -23,8 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 titulo.style.display = "none";
                 return;
             }
+
+            const esColeccionPersonalizados = titulo.textContent.trim() === "Colección Personalizados";
             const tarjetasVisibles = Array.from(siguienteGrid.querySelectorAll('.tarjeta-minimalista')).some(tarjeta => tarjeta.style.display !== 'none');
-            titulo.style.display = tarjetasVisibles ? "block" : "none";
+
+            if (mostrarSoloPersonalizados) {
+                titulo.style.display = esColeccionPersonalizados && tarjetasVisibles ? "block" : "none";
+            } else {
+                titulo.style.display = esColeccionPersonalizados ? "none" : (tarjetasVisibles ? "block" : "none");
+            }
         });
     };
 
