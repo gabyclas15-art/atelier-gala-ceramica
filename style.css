@@ -244,6 +244,11 @@ body {
     margin-bottom: 50px;
 }
 
+.seccion-personalizados {
+    display: none;
+    width: 100%;
+}
+
 .btn-filtro {
     background: #ffffff;
     border: 1px solid #ebdcd0;
@@ -438,8 +443,8 @@ body {
     height: 18px;
     padding: 0 5px;
     border-radius: 999px;
-    background-color: #d5282a;
-    color: #ffffff;
+    background-color: #594235;
+    color: #f7efe8;
     font-size: 0.72rem;
     display: inline-flex;
     align-items: center;

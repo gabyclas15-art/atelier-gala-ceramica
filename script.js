@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const botones = document.querySelectorAll(".btn-filtro");
     const tarjetas = document.querySelectorAll(".tarjeta-minimalista");
-    const titulos = document.querySelectorAll(".titulo-coleccion");
+    const titulos = document.querySelectorAll(".contenedor-catalogo > .titulo-coleccion");
     const buscador = document.getElementById("buscador");
+    const seccionPersonalizados = document.getElementById("seccion-personalizados");
 
     const filtrarTarjetas = () => {
         const termino = buscador.value.trim().toLowerCase();
@@ -10,6 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const filtro = filtroActivo ? filtroActivo.getAttribute("data-filtro") : "todos";
         const mostrarSoloPersonalizados = filtro === "personalizados";
         const mostrarTodos = filtro === "todos";
+
+        if (seccionPersonalizados) {
+            seccionPersonalizados.style.display = mostrarSoloPersonalizados ? "block" : "none";
+        }
 
         tarjetas.forEach(tarjeta => {
             const categoria = tarjeta.getAttribute("data-categoria");
